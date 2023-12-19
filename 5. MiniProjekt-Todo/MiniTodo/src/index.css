@@ -1,0 +1,19 @@
+:root {
+    --color-main: #252525;
+    --color-text: #fefefe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: var(--color-main);
+    /* color: var(--color-text); */
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}

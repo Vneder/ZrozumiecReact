@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierwszy odcinek</title>
+</head>
+
+<body>
+    <div class="link"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi saepe sunt ex ipsa provident molestias
+        eveniet voluptates quos quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, illo!
+    </p>
+    <div class="link"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi saepe sunt ex ipsa provident molestias
+        eveniet voluptates quos quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, illo!
+    </p>
+    <div class="link"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi saepe sunt ex ipsa provident molestias
+        eveniet voluptates quos quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, illo!
+    </p>
+    <div class="link"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi saepe sunt ex ipsa provident molestias
+        eveniet voluptates quos quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, illo!
+    </p>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        // Dodanie oraz możliwość szybkiej modyfikacji linków według vanilliaJS
+
+        // document.querySelectorAll(".link").forEach((link) => {
+        //     const anchorElement = document.createElement('a');
+        //     anchorElement.textContent = "Sprawdź kurs!";
+        //     anchorElement.href = "https://zrozumiecreact.pl";
+        //     anchorElement.target = "_blank";
+        //     anchorElement.rel = "noopener noreferrer";
+        //     link.append(anchorElement);
+        // });
+
+        // Dodanie oraz możliwość szybkiej modyfikacji linków według Reacta
+
+        document.querySelectorAll(".link").forEach((link) => {
+            const anchorElement = React.createElement(
+                "a",
+                {
+                    href: "https://zrozumiecreact.pl",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                },
+                "Sprawdź kurs!"
+            );
+            ReactDOM.createRoot(link).render(anchorElement);
+        });
+    </script>
+</body>
+
+</html>
