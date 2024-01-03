@@ -1,0 +1,11 @@
+.number {
+    background-color: #888;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.number:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

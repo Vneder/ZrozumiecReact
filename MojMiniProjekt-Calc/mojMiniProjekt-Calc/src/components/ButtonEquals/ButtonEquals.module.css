@@ -1,0 +1,12 @@
+.equals {
+    background-color: orange;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    grid-column: 4;
+}
+
+.equals:hover {
+    background-color: rgb(209, 118, 0);
+}

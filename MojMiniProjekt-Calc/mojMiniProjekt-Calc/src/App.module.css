@@ -1,0 +1,30 @@
+.main {
+    background-color: #666;
+    padding: 32px 24px;
+    border-radius: 12px;
+    height: 70vh;
+    min-width: 400px;
+}
+
+.display {
+    background-color: #fff;
+    color: #111;
+    font-size: 36px;
+    padding: 4px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: row-reverse; */
+    width: 100%;
+    min-height: 20%;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: none;
+}
+
+.panel {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 75%;
+}
